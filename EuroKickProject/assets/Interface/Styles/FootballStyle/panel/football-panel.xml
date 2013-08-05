@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nifty-styles>
+
+    <style id="football-panel-title">
+        <attributes padding="8px,8px,8px,8px" backgroundImage="Interface/Styles/FootballStyle/panel/panel_01.png" imageMode="resize:5,50,5,5,5,50,5,14,5,50,5,1" />
+    </style>
+    <style id="football-panel-1">
+        <attributes padding="8px,8px,8px,8px" backgroundImage="Interface/Styles/FootballStyle/panel/panel_04.png" imageMode="resize:8,44,8,8,8,44,8,24,8,44,8,8" />
+    </style>
+    <style id="football-panel-2">
+        <attributes padding="8px,8px,8px,8px" backgroundImage="Interface/Styles/FootballStyle/panel/panel_05.png" imageMode="resize:5,50,5,5,5,50,5,30,5,50,5,5" />
+    </style>
+</nifty-styles>

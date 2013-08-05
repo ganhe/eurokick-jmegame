@@ -1,0 +1,15 @@
+Material Flag1 : Common/MatDefs/Misc/Unshaded.j3md {
+     MaterialParameters {
+        ColorMap : Textures/flag/MUFlag.jpg
+        VertexColor : false
+        Color : 0.8 0.0 1.0 1.0
+     }
+    AdditionalRenderState {
+      FaceCull Off
+      Blend Alpha
+      DepthTest On
+      ColorWrite On
+      DepthWrite On
+      AlphaTestFalloff 1.0
+    }
+}

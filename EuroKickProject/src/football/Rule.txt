@@ -1,0 +1,90 @@
+RULE:
+------------------------------
+game start : the game start at 00
+game end : game end at 00
+score : ball in the opponent goal site
+winning : our score > op score
+losing : our score < op score
+draw : our score == op score
+ball inside : ball is inside the box
+ball outside : ball is outside the box
+near : distance < me.speed * 5 step
+far : distance < me.speed *20 step
+CHANCE :
+-------------------------------
+capture ball : skill * 90
+take ball : skill * 60
+fault : skill * 30
+EVERY ONE
+game start : go out, line up
+game end : go inside
+Refrere
+Follow and avoid the ball and player
+Side refrere 
+Keep horizontal with the ball
+Goal keeper
+-----------------------------
+if ball inside,
+has ball
+---pass to team mate
+no ball
+---team has ball
+------ball far: relax pose
+------ball near: defend pose
+---team does not have ball
+------if striker are near: defend the angle
+------if the striker are far: stand and wait
+Normal player
+--------------------------------
+if ball inside,
+has ball
+--- lead to the mid- , then pass
+--- ball taken : 40% hurt 
+no ball
+--- follow: find the closest striker of opponent team, follow him
+--- cut the pass : if the ball near, capture it
+--- take the ball : if the striker has the ball, take it
+------- fail : stand up 
+------- success : has ball
+------- fault : 
+-----------30% right: silent, 
+-----------70% take card, make a bargain
+if ball outside
+--- if near the ball, go to get it, pass to nearest team mate
+--- if second to the ball, go toward and prepare to be passed
+Leader 
+------------------------------------
+Do as normal Player
+* decide stragegy: 
+ball is in down: 
+if only <= 5 op-players : attack 4
+if more :
+if draw : attack 4
+if losing: attack 5
+if winning: defend
+ball is in mid :
+if on <= 7 op-players : attack 3
+if more :
+if draw : attack 4
+if losing : 60% chance to attack else defend
+if winning : defend
+//ball is in up:
+attack and score
+Defender
+---------------------------------
+Do as normal Player
+has ball
+--- the leader tell to attack: lead to the mid- , then pass
+--- 3 striker follow 
+--- or the leader tell to defend: lead back, pass to goal keeper
+Striker 
+---------------------------------
+Do as normal Player
+if ball inside,
+has ball
+--- run attack: lead to the up, tell the team is attack time
+--- if be follow too long with 2-3 opponent
+------- tell 2 nearest team mates to support, pass to teammate
+--- if near the goal and got good angle : shoot 
+------ if score : celebrate with team mate
+------ if not : prepare for the ball-backA

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nifty xmlns="http://nifty-gui.sourceforge.net/nifty-1.3.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://nifty-gui.sourceforge.net/nifty-1.3.xsd http://nifty-gui.sourceforge.net/nifty-1.3.xsd">
+    <!-- +++++++++++++++++++++++++++++++++++++++ -->
+    <!-- start screen -->
+    <!-- +++++++++++++++++++++++++++++++++++++++ -->
+    <useStyles filename="nifty-default-styles.xml" />
+    <useControls filename="nifty-default-controls.xml" />
+    <style id="ArialFont">
+        <attributes font="Interface/Fonts/Arial.fnt" />
+    </style>
+    <registerSound id="cinematichit" filename="Sounds/cinematic/cinematic hit.ogg" />
+    <screen id="InGameScreen" controller="football.ui.UIIngameController">
+        <layer height="80%" width="80%" id="layer2" childLayout="center">
+            <image align="center" valign="center" filename="Interface/InGame/Images/versus2.png" >
+                <effect>
+                    <onStartScreen  name="playSound" sound="cinematichit" startDelay="300"/>
+                    <onStartScreen  name="fade" startColor="#0000" endColor="#000f" length="500" startDelay="300"/>
+                    <onStartScreen  name="imageSize" startSize="3.0" endSize="1" length="500" startDelay="300" />   
+                    <onStartScreen  name="fade" startColor="#000f" endColor="#0000" length="200" startDelay="3000"  neverStopRendering="true"/>
+                    <onStartScreen  name="imageSize" startSize="1" endSize="1.2" length="100" startDelay="3000"   neverStopRendering="true"/>   
+                </effect>
+            </image>
+        </layer>
+        <layer id="layer" backgroundColor="#0000" childLayout="vertical">
+            <panel childLayout="vertical" height="30%" width="100%" align="center">
+            </panel>  
+            <panel childLayout="vertical" height="40%" width="100%" align="center" backgroundColor="#00000044" >
+                <effect>
+                    <onStartScreen name="move" mode="in" direction="top" length="300" startDelay="0" inherit="true"/>
+                    <onStartScreen name="move" mode="out" direction="bottom" length="300" startDelay="2500" inherit="true" neverStopRendering="true"/>
+                </effect>
+                <text text="Match" style="ArialFont" height="20%" color="#000f" align="center" textAlign="center"/>
+                <panel childLayout="horizontal" height="80%" align="left" >
+                    <panel childLayout="vertical" width="50%" height="100%" align="left" >
+                        <panel childLayout="center" height="80%" width="50%" align="center" >
+                            <image width="75%" height="90%" filename = "Textures/clubs/premier/logos/arsenal-logo.png"/>
+                        </panel>
+                        <text text="Arsenal FC" align="center" textAlign="center" style="ArialFont" height="20%" color="#000f"/>
+                    </panel>
+                    <panel childLayout="vertical" width="50%" height="100%" align="left" >
+                        <panel childLayout="center" height="80%" width="50%" align="center" >
+                            <image  width="75%" height="90%" filename = "Textures/clubs/premier/logos/manchester-united-logo.png"/>
+                        </panel>
+                        <text text="Manchester United FC" align="center" textAlign="center" style="ArialFont" height="20%" color="#000f"/>
+                    </panel>
+                </panel>
+            </panel>
+        </layer>
+    </screen>
+    
+    <screen id="goal" controller="football.ui.UIIngameController">
+        <layer height="80%" width="80%" id="layer2" childLayout="center">
+            <image align="center" valign="bottom" filename="Interface/Images/Goal icon_shaddow.png" >
+                <effect>
+                    <onStartScreen  name="fade" startColor="#0000" endColor="#000f" length="500" startDelay="100"/>
+                    <onStartScreen  name="imageSize" startSize="3.0" endSize="1.0" length="400" startDelay="100" />   
+                    <onEndScreen name="move" mode="out" direction="bottom" length="300" startDelay="0" inherit="true"/>   
+                </effect>
+            </image>
+        </layer>
+
+    </screen>
+    
+    <screen id="Stragegy" controller="football.ui.UIIngameController">
+        <layer id="layer" backgroundColor="#0000" childLayout="center">
+            <panel childLayout="vertical" width="20%" align="left" >
+                <text text="Stragegy" font="Interface/Fonts/Arial.fnt" color="#000f"/>
+                <control id="myListBox" name="listBox" vertical="optional" horizontal="optional" displayItems="4" selection="Multiple" />
+            </panel>
+        </layer>
+    </screen>
+    
+    <screen id="Empty" controller="football.ui.UIIngameController">
+        <layer id="layer" backgroundColor="#0000" childLayout="center">
+
+        </layer>
+    </screen>
+</nifty>

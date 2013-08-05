@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nifty-styles>
+  <useStyles filename="fonts.xml" />
+  <useStyles filename="panel/nifty-panel.xml" />
+  <useStyles filename="button/nifty-button.xml" />
+  <useStyles filename="label/nifty-label.xml" />
+  <useStyles filename="textfield/nifty-textfield.xml" />
+  <useStyles filename="dropdown/nifty-drop-down.xml" />
+  <useStyles filename="imageselect/nifty-image-select.xml" />
+  <useStyles filename="checkbox/nifty-checkbox.xml" />
+  <useStyles filename="radiobutton/nifty-radiobutton.xml" />
+  <useStyles filename="scrollbar/nifty-scrollbar-style.xml" />
+  <useStyles filename="slider/nifty-slider-style.xml" />
+  <useStyles filename="scrollpanel/nifty-scrollpanel-style.xml" />
+  <useStyles filename="console/nifty-console-style.xml" />
+  <useStyles filename="chat-control/nifty-chat-control.xml" />
+  <useStyles filename="menu/nifty-menu-style.xml" />
+  <useStyles filename="listbox/nifty-listbox-style.xml" />
+  <useStyles filename="window/nifty-window.xml" />
+  <useStyles filename="hint/nifty-hint.xml" />
+  <useStyles filename="tabs/nifty-tabs.xml" />
+  <useStyles filename="messagebox/nifty-messagebox.xml" />
+    
+    <style id="fontCS16">
+        <attributes font="Interface/Fonts/Counter-Strike.fnt" color="#ffff"/> 
+    </style>
+    
+    <style id="clear-button#panel">
+        <attributes backgroundImage="Interface/Styles/ClearStyle1/button/button2.png" imageMode="sprite-resize:220,48,0,26,168,26,5,26,168,26,38,26,168,26,5" paddingLeft="7px" paddingRight="7px" width="100px" height="35px" childLayout="center" visibleToMouse="true" />
+        <effect>
+            <onHover name="imageOverlay" filename="Interface/Styles/ClearStyle1/button/button2.png" imageMode="sprite-resize:220,48,2,26,168,26,5,26,168,26,38,26,168,26,5" post="true" />
+            <onFocus name="imageOverlay" filename="Interface/Styles/ClearStyle1/button/button2.png" imageMode="sprite-resize:220,48,1,26,168,26,5,26,168,26,38,26,168,26,5" post="true" />
+            <onEnabled name="renderQuad" startColor="#2228" endColor="#2220" post="true" length="150" />
+            <onDisabled name="renderQuad" startColor="#2220" endColor="#2228" post="true" length="150" />
+        </effect>
+    </style>
+    <style id="clear-button#text">
+        <attributes align="center" valign="center" visibleToMouse="false" font="Interface/Fonts/Counter-Strike.fnt"/>
+        <effect>
+            <onEnabled name="textColorAnimated" startColor="#8886" endColor="#eeef" post="false" length="150" />
+            <onDisabled name="textColorAnimated" startColor="#eeef" endColor="#8886" post="false" length="150" />
+        </effect>
+    </style>
+
+    <style id="clear-panel">
+        <attributes backgroundImage="Interface/Styles/ClearStyle1/panel/panel1.png" imageMode="resize:27,321,27,43,27,321,27,367,27,321,27,124" paddingLeft="27px" paddingTop="12px" paddingRight="27px"  paddingBottom="70px" width="100px" height="35px" childLayout="center" visibleToMouse="true" />
+    </style>
+    <style id="clear-small-panel">
+        <attributes backgroundImage="Interface/Styles/ClearStyle1/panel/panel2.png" imageMode="resize:27,321,27,43,27,321,27,428,27,321,27,15" paddingLeft="27px" paddingTop="12px" paddingRight="27px"  paddingBottom="16px" width="100px" height="35px" childLayout="center" visibleToMouse="true" />
+    </style>
+</nifty-styles>
+

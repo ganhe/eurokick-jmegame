@@ -1,0 +1,16 @@
+Material MyMaterial : Common/MatDefs/Misc/Particle.j3md {
+    MaterialParameters {
+        Texture : Textures/smoke/flame.png
+    }
+    AdditionalRenderState {
+      FaceCull Off
+      Wireframe Off
+      DepthWrite On
+      PolyOffset 0.0 0.0
+      AlphaTestFalloff 0.0
+      Blend AlphaAdditive
+      PointSprite Off
+      ColorWrite On
+      DepthTest Off
+    }
+}

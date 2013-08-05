@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nifty xmlns="http://nifty-gui.sourceforge.net/nifty-1.3.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://nifty-gui.sourceforge.net/nifty-1.3.xsd http://nifty-gui.sourceforge.net/nifty-1.3.xsd">
+    <!-- +++++++++++++++++++++++++++++++++++++++ -->
+    <!-- start screen -->
+    <!-- +++++++++++++++++++++++++++++++++++++++ -->
+    <useStyles filename="Interface/Styles/FootballStyle/football-styles.xml" />
+    <useControls filename="nifty-default-controls.xml" />
+    <style id="ArialFont">
+        <attributes font="Interface/Fonts/Arial.fnt" color="#ffffffff" />
+    </style>
+    <style id="NormalFont">
+        <attributes font="aurulent-sans-16.fnt" color="#ffffffff"/>
+    </style>
+    <style id="oddLine">
+        <attributes font="aurulent-sans-16.fnt" color="#ffff00ff"  backgroundColor="#ff000044" />
+    </style>
+    <style id="evenLine">
+        <attributes font="aurulent-sans-16.fnt" color="#ffffffff"  backgroundColor="#ccaa1144" />
+    </style>
+    <style id="selectedLine">
+        <attributes font="aurulent-sans-16.fnt" color="#fffffffff"  backgroundColor="#88ffffff" />
+    </style>
+    <controlDefinition name="player-table-title">
+        <effect>
+            <onCustom customKey="select" name="colorBar" post="false" color="#444f" neverStopRendering="true" timeType="infinite" />
+            <onCustom customKey="select" name="textColor" post="false" color="#fc0f" neverStopRendering="true" timeType="infinite" />
+        </effect>
+        <panel childLayout="horizontal" width="100%" align="center" style="football-panel-title" visibleToMouse="true">
+
+            <text id="player-table-title-from" text="From" align="center" textAlign="center" style="NormalFont" width="50%" />
+            <text id="player-table-title-subject" text="Subject" align="center" textAlign="center" style="NormalFont" width="50%" />
+        </panel>
+    </controlDefinition>
+    <controlDefinition name="player-table-line">
+        <panel childLayout="horizontal" width="100%" align="center">
+            <image id="#player-line-icon" width="23px" height="23px" />
+            <control id="#player-line-name" name="label" align="left" textHAlign="left" height="23px" width="30%" wrap="true" />
+            <control id="#player-line-pos" name="label" align="left" textHAlign="left" height="23px" width="15%" wrap="true" />
+            <control id="#player-line-shot" name="label" align="left" textHAlign="left" height="23px" width="10%" wrap="true" />
+            <control id="#player-line-pass" name="label" align="left" textHAlign="left" height="23px" width="10%" wrap="true" />
+            <control id="#player-line-keep" name="label" align="left" textHAlign="left" height="23px" width="10%" wrap="true" />
+            <control id="#player-line-take" name="label" align="left" textHAlign="left" height="23px" width="10%" wrap="true" />
+            <control id="#player-line-adtitute" name="label" align="left" textHAlign="left" height="23px" width="10%" wrap="true" />
+
+        </panel>
+    </controlDefinition>
+    
+    <screen id="PlayerListScreen" controller="football.ui.UIPlayerListScreenController">
+        <layer id="layer" childLayout="vertical"  backgroundImage="Interface/Images/Abstract-wallpaper-9.jpg">
+            
+            <panel margin="8px" id="titlePanel" childLayout="horizontal" height="10%" width="100%" align="center" backgroundColor="#ff000044">
+                <image id="clubLogo" width="15%" height="90%" filename = "Textures/clubs/premier/logos/manchester-united-logo.png"/>
+                <panel id="titleInfoPanel" childLayout="vertical" height="100%" width="85%" align="center" backgroundColor="#ff000044">
+                    <text id="titleClubName" text="Manchester United FC" align="center" textAlign="center" style="ArialFont" height="50%" />
+                    <text id="titleCoachName" text="Cuong Nguyen Manh (Manager), Age: 25" style="ArialFont" height="50%"  align="center" textAlign="center"/>
+                </panel>  
+            </panel>  
+            <panel margin="8px" id="bodyPanel" childLayout="vertical" height="90%" width="100%" align="center" backgroundColor="#0000ff44" >
+
+                
+                <panel childLayout="horizontal" height="95%" align="left" >
+                    <panel margin="8px" id="clubActivities" style="football-panel-1" childLayout="vertical" width="30%" height="60%" align="left" >
+                        <effect>
+                            <onStartScreen name="move" mode="in" direction="left" length="300" startDelay="0" inherit="true"/>
+                        </effect>
+                        
+                        <text text="Manchester United FC" align="center" textAlign="center" style="ArialFont" height="20%" />
+                        <panel childLayout="vertical" height="80%" width="100%" align="center" >
+                            <panel margin="8px" childLayout="horizontal" height="20%" width="100%" align="center" style="football-panel-2">
+                   
+                                <image id="footballPitchIcon" width="45px" height="90%" filename = "Interface/Images/icons/soccer-shoe-grass-icon.png"/>
+                                <text text="Players" align="center" textAlign="center" style="ArialFont" height="100%" />
+                            </panel>
+                            <panel margin="8px" childLayout="horizontal" height="20%" width="100%" align="center" style="football-panel-2">
+                                
+                                
+                                <image id="footballPitchIcon" width="45px" height="90%" filename = "Interface/Images/icons/soccer-referee-grass-icon.png"/>
+                                <text text="Training" align="center" textAlign="center" style="ArialFont" height="100%" />
+                            </panel>
+                            <panel margin="8px" childLayout="horizontal" height="20%" width="100%" align="center" style="football-panel-2">
+                                
+                                
+                                <image id="footballPitchIcon" width="45px" height="90%" filename = "Interface/Images/icons/soccer-4-icon.png"/>
+                                <text text="Stragegy" align="center" textAlign="center" style="ArialFont" height="100%" />
+                            </panel>
+                            <panel margin="8px" childLayout="horizontal" height="20%" width="100%" align="center" style="football-panel-2">
+                                
+                                
+                                <image id="footballPitchIcon" width="45px" height="90%" filename = "Interface/Images/icons/Sport-football-pitch-icon.png"/>
+                                <text text="Match" align="center" textAlign="center" style="ArialFont" height="100%" />
+                            </panel>
+                        </panel>
+                        
+                    </panel>
+                    <panel margin="8px" id="rightPanel" style="football-panel-1" childLayout="vertical" width="70%" height="100%" align="left" >
+                        <effect>
+                            <onStartScreen name="move" mode="in" direction="right" length="300" startDelay="0" inherit="true"/>
+                        </effect>
+                        <panel childLayout="vertical" height="50%" width="90%" align="center" >
+                            <text text="PLAYER LIST" align="center" textAlign="center" style="NormalFont" height="20%" />
+                            <panel id="InboxTitle" childLayout="vertical" height="100%" width="100%" align="center" >
+                                <control name="player-table-title" height="10%"/> 
+                                <control id="player-table" name="listBox" vertical="optional" horizontal="off" displayItems="8" 
+                                         viewConverterClass="football.ui.view.PlayerViewConvertor" selectionMode="Single" forceSelection="true">
+                                    <control name="player-table-line" /> <!-- here we tell Nifty what element to display in each line -->
+                                </control> 
+                            </panel>
+                        </panel>
+                        <panel childLayout="vertical" height="50%" width="90%" align="center" >
+                            <panel childLayout="vertical" height="20%" width="100%" align="center" style="football-panel-title">
+                                <text text="Player info" align="center" textAlign="center" style="ArialFont" height="100%" />
+                            </panel>
+                            <panel childLayout="vertical" height="80%" width="50%" align="center" >
+                                <text text="Name: Ronaldo" align="center" textAlign="center" style="NormalFont" height="20%" />
+                                <text text="Possition: Attacker" align="center" textAlign="center" style="NormalFont" height="20%" />
+                            </panel>
+                        </panel>
+                        
+                    </panel>
+                </panel>
+            </panel>
+        </layer>
+    </screen>
+  
+</nifty>
