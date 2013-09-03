@@ -5,7 +5,7 @@ import football.ui.UIEditPlayer;
 import football.ui.UIIngameController;
 import football.ui.UIManagerScreenController;
 import football.ui.UIPlayerListScreenController;
-import sg.atom.core.GameGUIManager;
+import sg.atom.ui.GameGUIManager;
 import sg.atom.ui.common.UILoadingScreenController;
 
 /**

@@ -11,11 +11,10 @@ import com.jme3.math.Vector3f;
 import com.jme3.renderer.Camera;
 import football.gameplay.FootballGamePlayManager;
 import football.stage.FootballScreenEffectManager;
-import football.world.FootballGameWorldManager;
-import sg.atom.core.StageManager;
-import sg.atom.world.WorldSettings;
 import football.stage.sound.FbSoundManager;
-import sg.atom.fx.ScreenEffectManager;
+import football.world.FootballGameWorldManager;
+import sg.atom.stage.StageManager;
+import sg.atom.world.WorldSettings;
 
 /**
  *

@@ -9,7 +9,7 @@ import com.jme3.math.Vector3f;
 import com.jme3.renderer.Camera;
 import com.jme3.scene.Spatial;
 import sg.atom.gameplay.GameLevel;
-import sg.atom.stage.GamePlayManager;
+import sg.atom.gameplay.GamePlayManager;
 import football.FootballGame;
 import football.world.FootballGameWorldManager;
 import football.gameplay.info.*;

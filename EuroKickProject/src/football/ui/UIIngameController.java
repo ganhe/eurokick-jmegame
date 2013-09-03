@@ -14,7 +14,7 @@ import football.FootballGameStageManager;
 import football.gameplay.FootballGamePlayManager;
 import football.gameplay.info.FootballStragegy;
 import java.util.List;
-import sg.atom.core.GameGUIManager;
+import sg.atom.ui.GameGUIManager;
 
 /**
  *

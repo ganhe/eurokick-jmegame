@@ -8,7 +8,7 @@ import de.lessvoid.nifty.screen.Screen;
 import de.lessvoid.nifty.screen.ScreenController;
 import football.ui.model.EmailMessageModel;
 import java.util.List;
-import sg.atom.core.GameGUIManager;
+import sg.atom.ui.GameGUIManager;
 
 /**
  *

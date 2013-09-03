@@ -5,7 +5,7 @@ import football.FootballGameStageManager;
 import football.gameplay.BaseGameEntity;
 import java.util.ArrayList;
 import java.util.Iterator;
-import sg.atom.core.StageManager;
+import sg.atom.stage.StageManager;
 import sg.atom.entity.Entity;
 import sg.atom.entity.EntityManager;
 import football.gameplay.FootballGamePlayManager;

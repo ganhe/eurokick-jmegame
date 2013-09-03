@@ -1,8 +1,11 @@
-/Project/nbproject/private/
+/EuroKickProject/nbproject/private/
+/EuroKickProject/build/
+/EuroKickProject/dist/
+
 /FootballAITest/build/
 /FootballAITest/dist/
 /FootballAITest/nbproject/private/
-/EuroKickProject/nbproject/private/
+
 *.dll
 SoccerGameResources/
 
